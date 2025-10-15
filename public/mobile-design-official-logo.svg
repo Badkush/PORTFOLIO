@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="67" height="100">
+  <!-- Mobile Design Icon -->
+  
+  <!-- Phone outline -->
+  <rect x="50" y="20" width="100" height="180" rx="15" ry="15" 
+        fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Screen -->
+  <rect x="58" y="40" width="84" height="140" rx="5" ry="5" fill="#4A90E2"/>
+  
+  <!-- Home button -->
+  <circle cx="100" cy="215" r="8" fill="#666"/>
+  
+  <!-- Speaker -->
+  <rect x="80" y="28" width="40" height="4" rx="2" fill="#666"/>
+  
+  <!-- Screen content - UI elements -->
+  <rect x="65" y="50" width="70" height="15" rx="2" fill="#fff" opacity="0.9"/>
+  <rect x="65" y="75" width="50" height="8" rx="1" fill="#fff" opacity="0.7"/>
+  <rect x="65" y="88" width="60" height="8" rx="1" fill="#fff" opacity="0.7"/>
+  
+  <!-- App icons grid -->
+  <circle cx="75" cy="110" r="8" fill="#FF6B6B"/>
+  <circle cx="100" cy="110" r="8" fill="#4ECDC4"/>
+  <circle cx="125" cy="110" r="8" fill="#45B7D1"/>
+  
+  <circle cx="75" cy="135" r="8" fill="#FFA07A"/>
+  <circle cx="100" cy="135" r="8" fill="#98D8C8"/>
+  <circle cx="125" cy="135" r="8" fill="#F7DC6F"/>
+  
+  <!-- Navigation bar -->
+  <rect x="65" y="155" width="70" height="15" rx="7" fill="#fff" opacity="0.8"/>
+  
+  <!-- Design tools around phone -->
+  <!-- Pencil -->
+  <line x1="25" y1="80" x2="40" y2="65" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="22" cy="83" r="3" fill="#FF6B6B"/>
+  
+  <!-- Ruler -->
+  <rect x="160" y="90" width="25" height="4" fill="#45B7D1"/>
+  <rect x="160" y="94" width="25" height="2" fill="#333"/>
+  
+  <!-- Color palette -->
+  <circle cx="30" cy="150" r="5" fill="#FF6B6B"/>
+  <circle cx="40" cy="150" r="5" fill="#4ECDC4"/>
+  <circle cx="30" cy="160" r="5" fill="#45B7D1"/>
+  <circle cx="40" cy="160" r="5" fill="#FFA07A"/>
+  
+  <!-- Stylus -->
+  <line x1="170" y1="140" x2="185" y2="155" stroke="#666" stroke-width="2"/>
+  <circle cx="168" cy="138" r="2" fill="#666"/>
+</svg>
