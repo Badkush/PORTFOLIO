@@ -11,9 +11,9 @@
             >
                 <div class="logo">
                     <p class="name">
-                        maxime Cuche
+                        Maxime Cuche
                     <br>
-                    <span class="metier">Développeur web et mobile indépendant</span>
+                    <span class="metier">Développeur Full-Stack & Mobile</span>
                     </p>
                 </div>
             </div>
@@ -310,6 +310,11 @@ header.scrolled .navigation {
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
+  background: linear-gradient(135deg, #F20E0E, #ff4757);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
 }
 .metier {
   text-transform: capitalize;
