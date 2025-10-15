@@ -74,42 +74,42 @@ const skills = ref([
     name: 'Figma',
     level: 85,
     description: 'Design UI/UX et prototypage',
-    icon: "/figma-official-logo.svg"
+    icon: "/PORTFOLIO/figma-official-logo.svg"
   },
   {
     id: 2,
     name: 'HTML5',
     level: 95,
     description: 'Structure et sémantique web',
-    icon: '/html5-logo.svg'
+    icon: '/PORTFOLIO/html5-logo.svg'
   },
   {
     id: 3,
     name: 'CSS3',
     level: 90,
     description: 'Styles et animations avancées',
-    icon: '/css3-official-logo.svg'
+    icon: '/PORTFOLIO/css3-official-logo.svg'
   },
   {
     id: 4,
     name: 'JavaScript',
     level: 85,
     description: 'Programmation dynamique',
-    icon: '/javascript-official-logo.svg'
+    icon: '/PORTFOLIO/javascript-official-logo.svg'
   },
   { 
     id: 5,
     name: 'Vue.js',
     level: 80,
     description: 'Framework réactif moderne',
-    icon: '/vuejs-logo.svg'
+    icon: '/PORTFOLIO/vuejs-logo.svg'
   },
   {
     id: 6,
     name: 'Mobile Design',
     level: 75,
     description: 'Applications mobiles natives',
-    icon: "/mobile-design-official-logo.svg"
+    icon: "/PORTFOLIO/mobile-design-official-logo.svg"
   }
 ])
 
@@ -125,7 +125,7 @@ const projects = ref([
   },
   {
     id: 2,
-    title: 'site vitrine pour Udemy',
+    title: 'Site vitrine pour Udemy',
     description: 'Interface d\'administration avec graphiques interactifs',
     image: './images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
