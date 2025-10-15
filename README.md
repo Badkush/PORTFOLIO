@@ -1,38 +1,63 @@
-# vue-project
+# 🎯 PORTFOLIO - Maxime Cuche
 
-This template should help get you started developing with Vue 3 in Vite.
+**Carte de visite numérique** - Développeur Web & Mobile
 
-## Recommended IDE Setup
+## 📋 Description
+Portfolio personnel développé avec Vue.js 3 et Vite, présentant mes compétences en développement web et mobile.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Technologies utilisées
+- **Vue.js 3** - Framework JavaScript progressif
+- **Vite** - Outil de build rapide
+- **CSS3** - Styling avancé avec glassmorphism
+- **JavaScript ES6+** - Logique moderne
 
-## Recommended Browser Setup
+## 🛠️ Installation et développement
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+### Prérequis
+- Node.js (version 16 ou supérieure)
+- npm ou yarn
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+### Installation
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+### Développement
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
+### Build de production
 ```sh
 npm run build
 ```
+
+## 📁 Structure du projet
+```
+src/
+├── components/          # Composants Vue réutilisables
+├── assets/             # Images, logos, fichiers statiques
+├── Header.vue          # En-tête avec navigation
+├── Home.vue           # Page d'accueil
+├── Work.vue           # Présentation des projets
+├── Contact.vue        # Formulaire de contact
+├── Footer.vue         # Pied de page
+└── main.js           # Point d'entrée de l'application
+```
+
+## 🎨 Fonctionnalités
+- **Design responsive** adaptatif mobile/desktop
+- **Navigation fluide** avec scroll smooth
+- **Formulaire de contact** avec validation
+- **Showcase de projets** avec liens GitHub
+- **Mode sombre** (optionnel)
+- **Effets visuels** modernes
+
+## 📧 Contact
+**Maxime Cuche** - Développeur Web & Mobile  
+📍 Mercues, Lot (46)  
+✉️ maxcuche46@gmail.com  
+🔗 [GitHub](https://github.com/Badkush)
+
+---
+*Développé avec ❤️ en Vue.js*
