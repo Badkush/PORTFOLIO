@@ -119,25 +119,25 @@ const projects = ref([
     id: 1,
     title: 'Creation de fond d\'écran rétro',
     description: 'Design d\'un fond d\'écran rétro pour un client',
-    image: '/images/gallery/hawaii-illustration-retro-comic-style.jpg',
-    technologies: ['Figma'],
+    image: './images/gallery/hawaii-illustration-retro-comic-style.jpg',
+    technologies: ['figma'],
     url: 'https://github.com/Badkush/devoir-comment.git'
   },
   {
     id: 2,
-    title: 'Site vitrine pour Udemy',
+    title: 'site vitrine pour Udemy',
     description: 'Interface d\'administration avec graphiques interactifs',
-    image: '/images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg',
+    image: './images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
-    url: '/images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg'
+    url: './images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg'
   },
   {
     id: 3,
     title: 'App Mobile Figma',
     description: 'Design d\'application mobile pour un coffee shop',
-    image: '/images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png',
+    image: './images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png',
     technologies: ['Figma', 'Design System', 'Prototyping'],
-    url: '/images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png'
+    url: './images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png'
   }
 ])
 
