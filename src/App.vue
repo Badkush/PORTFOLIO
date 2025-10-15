@@ -11,8 +11,8 @@
 <script setup>
 import Header from './header.vue'; // Importation du composant Header
 import Home from './Home.vue'; // Importation du composant Home
-import Work from './assets/Work.vue'; // Importation du composant Work
-import Contact from './assets/Contact.vue'; // Importation du composant Contact
+import Work from './Work.vue'; // Importation du composant Work
+import Contact from './Contact.vue'; // Importation du composant Contact
 import Footer from './Footer.vue'; // Importation du composant Footer
 </script>
 

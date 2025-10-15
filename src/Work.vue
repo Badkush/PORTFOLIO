@@ -117,10 +117,10 @@ const skills = ref([
 const projects = ref([
   {
     id: 1,
-    title: 'Dynamiser un espace commentaire',
-    description: 'Amélioration de l\'expérience utilisateur dans les sections de commentaires',
+    title: 'Creation de fond d\'écran rétro',
+    description: 'Design d\'un fond d\'écran rétro pour un client',
     image: './images/gallery/hawaii-illustration-retro-comic-style.jpg',
-    technologies: ['JavaScript', 'HTML5'],
+    technologies: ['figma'],
     url: 'https://github.com/Badkush/devoir-comment.git'
   },
   {
