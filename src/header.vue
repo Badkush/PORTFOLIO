@@ -22,7 +22,7 @@
             <div class="profile-section">
                 <div class="profile-image-container">
                     <img 
-                        src="./images/gallery/me.jpg" 
+                        src="/images/gallery/me.jpg" 
                         alt="Photo de profil de Maxime Cuche" 
                         class="profile-image"
                     />
