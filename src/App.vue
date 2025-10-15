@@ -39,17 +39,3 @@ main {
   padding-top: 0;
 }
 </style>
-
-<!--
-  Le dépôt Git a été initialisé avec succès.
-  Vous pouvez maintenant commencer à suivre vos fichiers avec Git.
-
-  Commandes utiles :
-  - git add <fichier> : Ajouter un fichier au suivi
-  - git commit -m "Message" : Enregistrer les modifications
-  - git push : Pousser les modifications vers le dépôt distant
--->
-
-git add .
-git commit -m "Premier commit"
-git remote add origin TON_URL_GITHUB
