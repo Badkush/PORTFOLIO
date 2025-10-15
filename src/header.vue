@@ -11,7 +11,7 @@
             >
                 <div class="logo">
                     <p class="name">
-                        maxime Cuche
+                        maxime Cuchezzz
                     <br>
                     <span class="metier">Développeur web et mobile indépendant</span>
                     </p>
