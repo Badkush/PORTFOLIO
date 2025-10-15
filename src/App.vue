@@ -1,9 +1,11 @@
 <template>
+
     <Header />
     <Home />
     <Work />
     <Contact />
     <Footer />
+    
 </template>
 
 <script setup>
