@@ -119,7 +119,7 @@ const projects = ref([
     id: 1,
     title: 'Dynamiser un espace commentaire',
     description: 'Amélioration de l\'expérience utilisateur dans les sections de commentaires',
-    image: '/images/gallery/hawaii-illustration-retro-comic-style.jpg',
+    image: './images/gallery/hawaii-illustration-retro-comic-style.jpg',
     technologies: ['JavaScript', 'HTML5'],
     url: 'https://github.com/Badkush/devoir-comment.git'
   },
@@ -127,17 +127,17 @@ const projects = ref([
     id: 2,
     title: 'site vitrine pour Udemy',
     description: 'Interface d\'administration avec graphiques interactifs',
-    image: '/images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg',
+    image: './images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
-    url: '/images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg'
+    url: './images/gallery/9b0a4ca0-9353-4ab3-98d7-fb3cf8d1c5b3.jpg'
   },
   {
     id: 3,
     title: 'App Mobile Figma',
     description: 'Design d\'application mobile pour un coffee shop',
-    image: '/images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png',
+    image: './images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png',
     technologies: ['Figma', 'Design System', 'Prototyping'],
-    url: '/images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png'
+    url: './images/gallery/1531cdbdd76fa9a3a3c30f4167e82f2f936c98b0.png'
   }
 ])
 
