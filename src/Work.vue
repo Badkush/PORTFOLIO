@@ -107,7 +107,7 @@ const skills = ref([
   {
     id: 6,
     name: 'Mobile Design',
-    level: 75,
+    level: 70,
     description: 'Applications mobiles natives',
     icon: "/PORTFOLIO/mobile-design-official-logo.svg"
   }
@@ -141,11 +141,14 @@ const projects = ref([
   }
 ])
 
-// Fonctions d'interaction
+// Fonctions d'interaction 
 const playHoverAnimation = (event) => {
+
+  // Animation au survol
   const card = event.currentTarget
   card.style.transform = 'translateY(-5px)'
-  
+
+  // Revenir à la position initiale après l'animation
   setTimeout(() => {
     card.style.transform = ''
   }, 300)
@@ -157,6 +160,7 @@ const openImageInNewWindow = (project) => {
     // Ouvre l'image dans une nouvelle fenêtre/onglet
     window.open(project.image, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes')
   } else {
+    // Si aucune image n'est disponible, afficher une alerte  
     alert('Aucune image disponible pour ce projet.')
   }
 }
@@ -164,10 +168,12 @@ const openImageInNewWindow = (project) => {
 // Animation au chargement
 onMounted(() => {
   const cards = document.querySelectorAll('.skill-card')
+
+  // La méthode forEach permet d'exécuter une fonction donnée sur chaque élément du tableau.
   cards.forEach((card, index) => {
     setTimeout(() => {
       card.style.opacity = '1'
-      card.style.transform = 'translateY(0)'
+      card.style.transform = 'translateY(0)' 
     }, index * 100)
   })
 })
@@ -175,7 +181,7 @@ onMounted(() => {
 
 <style scoped>
 .work {
-  background: linear-gradient(135deg, #FFFEEF 0%, #f8f4e6 100%);
+  background: linear-gradient(135deg, #FFFEEF 0%, #f8f4e6 100%);                    
   padding: 80px 0;
   min-height: 100vh;
 }
