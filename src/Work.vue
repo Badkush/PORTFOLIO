@@ -237,6 +237,7 @@ onMounted(() => {
 
 .skill-info {
   text-align: center;
+  cursor: default;
 }
 
 .skill-name {
