@@ -17,6 +17,7 @@ import Footer from './Footer.vue'; // Importation du composant Footer
 </script>
 
 <style>
+/* Importation de la police Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Styles globaux pour l'application */
@@ -36,8 +37,8 @@ body {
   box-sizing: border-box;
 }
 
-/* Assurer que le contenu principal commence après le header */
+/* Assurer que le contenu principal commence après le header
 main {
   padding-top: 0;
-}
+} */
 </style>
