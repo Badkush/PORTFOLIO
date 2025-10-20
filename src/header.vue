@@ -33,7 +33,7 @@
             <div class="nav-section">
                 <div class="links">
                     <a href="#work" class="nav-link">work</a>
-                    <a href="#" @click="openAboutModal" class="nav-link">about me</a>
+                    <a href="about" class="nav-link" target="_blank">about me</a>
                     <a href="#contact" class="nav-link">contact</a>
                     <a 
                         href="#"
@@ -49,78 +49,6 @@
         </div>      
     </nav>
   </header>
-
-  <!-- Modal About Me -->
-  <div v-if="showModal" class="modal-overlay" @click="closeModal">
-    <div class="modal-content" @click.stop>
-      <div class="modal-header">
-        <h2>À propos de moi</h2>
-        <button class="close-btn" @click="closeModal">&times;</button>
-      </div>
-      
-      <div class="modal-body">
-        <div class="about-content">
-          <div class="about-image">
-            <img src="/images/gallery/me.jpg" alt="Maxime Cuche" class="about-profile-img">
-          </div>
-          
-          <div class="about-text">
-            <h3>Maxime Cuche</h3>
-            <p class="about-title">Développeur Web et Mobile Indépendant</p>
-            
-            <div class="about-description">
-              <p>
-                Passionné par le développement web et mobile depuis plus de 5 ans, je crée des applications 
-                modernes et performantes qui répondent aux besoins de mes clients.
-              </p>
-              
-              <p>
-                Spécialisé dans les technologies JavaScript (Vue.js, React, Node.js), je maîtrise également 
-                le développement mobile avec React Native et Flutter.
-              </p>
-              
-              <div class="skills-grid">
-                <div class="skill-category">
-                  <h4>Frontend</h4>
-                  <ul>
-                    <li>Vue.js / React</li>
-                    <li>HTML5 / CSS3</li>
-                    <li>JavaScript ES6+</li>
-                    <li>Responsive Design</li>
-                  </ul>
-                </div>
-                
-                <div class="skill-category">
-                  <h4>Backend</h4>
-                  <ul>
-                    <li>Node.js / Express</li>
-                    <li>PHP / Laravel</li>
-                    <li>MongoDB / MySQL</li>
-                    <li>API REST</li>
-                  </ul>
-                </div>
-                
-                <div class="skill-category">
-                  <h4>Mobile</h4>
-                  <ul>
-                    <li>React Native</li>
-                    <li>Flutter</li>
-                    <li>Progressive Web Apps</li>
-                    <li>App Store / Play Store</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="contact-cta">
-                <p>Vous avez un projet en tête ? Discutons-en !</p>
-                <button class="cta-btn" @click="contactMe">Me contacter</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </template>
 
@@ -200,45 +128,9 @@ const scrollToTop = () => {
 }
 
 // Fonction pour gérer l'effet de scroll sur le header
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 
 let isScrolled = false
-
-// Gestion du modal About Me
-const showModal = ref(false)
-
-const openAboutModal = (event) => {
-  event.preventDefault()
-  showModal.value = true
-  // Empêcher le scroll du body quand le modal est ouvert
-  document.body.style.overflow = 'hidden'
-}
-
-const closeModal = () => {
-  showModal.value = false
-  // Rétablir le scroll du body
-  document.body.style.overflow = 'auto'
-}
-
-// Fonction pour contacter depuis le modal
-const contactMe = () => {
-  closeModal()
-  // Faire défiler vers la section contact ou ouvrir l'email
-  const contactSection = document.querySelector('#contact')
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: 'smooth' })
-  } else {
-    // Ouvrir l'email si pas de section contact
-    openOutlookEmail(new Event('click'))
-  }
-}
-
-// Fermer le modal avec la touche Échap
-const handleEscKey = (event) => {
-  if (event.key === 'Escape' && showModal.value) {
-    closeModal()
-  }
-}
 
 const handleScroll = () => {
   const header = document.querySelector('header')
@@ -257,12 +149,10 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  window.addEventListener('keydown', handleEscKey)
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
-  window.removeEventListener('keydown', handleEscKey)
 })
 
 // Fonction pour afficher les options au clic droit
@@ -554,260 +444,6 @@ a {
   
   .links {
     gap: 15px;
-  }
-}
-
-/* Styles du modal About Me */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-  animation: fadeIn 0.3s ease-out;
-}
-
-.modal-content {
-  background: #FFFEEF;
-  border-radius: 15px;
-  max-width: 800px;
-  max-height: 90vh;
-  width: 90%;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 20px 60px rgba(242, 14, 14, 0.3);
-  animation: slideUp 0.4s ease-out;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 30px;
-  border-bottom: 2px solid rgba(242, 14, 14, 0.1);
-  background: linear-gradient(135deg, rgba(242, 14, 14, 0.05) 0%, rgba(255, 254, 239, 0.95) 100%);
-}
-
-.modal-header h2 {
-  color: #F20E0E;
-  margin: 0;
-  font-size: 1.8em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  font-size: 30px;
-  color: #F20E0E;
-  cursor: pointer;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.close-btn:hover {
-  background: rgba(242, 14, 14, 0.1);
-  transform: rotate(90deg);
-}
-
-.modal-body {
-  padding: 30px;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  align-items: start;
-}
-
-.about-image {
-  display: flex;
-  justify-content: center;
-}
-
-.about-profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 4px solid #F20E0E;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(242, 14, 14, 0.3);
-}
-
-.about-text h3 {
-  color: #F20E0E;
-  font-size: 2em;
-  margin: 0 0 5px 0;
-  font-weight: bold;
-}
-
-.about-title {
-  color: #666;
-  font-size: 1.2em;
-  margin: 0 0 20px 0;
-  font-style: italic;
-}
-
-.about-description p {
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin: 25px 0;
-}
-
-.skill-category {
-  background: rgba(242, 14, 14, 0.05);
-  padding: 20px;
-  border-radius: 10px;
-  border-left: 4px solid #F20E0E;
-}
-
-.skill-category h4 {
-  color: #F20E0E;
-  margin: 0 0 15px 0;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-category li {
-  color: #333;
-  padding: 5px 0;
-  position: relative;
-  padding-left: 20px;
-}
-
-.skill-category li::before {
-  content: '▶';
-  position: absolute;
-  left: 0;
-  color: #F20E0E;
-  font-size: 0.8em;
-}
-
-.contact-cta {
-  background: linear-gradient(135deg, #F20E0E 0%, #ff4444 100%);
-  color: white;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  margin-top: 25px;
-}
-
-.contact-cta p {
-  margin: 0 0 15px 0;
-  font-size: 1.1em;
-  color: white !important;
-}
-
-.cta-btn {
-  background: white;
-  color: #F20E0E;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.cta-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Responsive pour le modal */
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 20px;
-  }
-  
-  .about-profile-img {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .modal-content {
-    width: 95%;
-    margin: 10px;
-  }
-  
-  .modal-header,
-  .modal-body {
-    padding: 20px;
-  }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .modal-header h2 {
-    font-size: 1.4em;
-  }
-  
-  .about-text h3 {
-    font-size: 1.5em;
-  }
-  
-  .about-profile-img {
-    width: 120px;
-    height: 120px;
   }
 }
 </style>
