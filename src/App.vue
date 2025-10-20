@@ -2,7 +2,7 @@
 
     <Header />
     <Home />
-    <Work />
+    <Work /> 
     <Contact />
     <Footer />
     
@@ -36,9 +36,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Assurer que le contenu principal commence après le header
-main {
-  padding-top: 0;
-} */
 </style>
+
+
