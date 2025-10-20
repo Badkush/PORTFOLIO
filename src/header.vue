@@ -33,11 +33,11 @@
             <div class="nav-section">
                 <div class="links">
                     <a href="#work" class="nav-link">work</a>
-                    <a href="#about" class="nav-link">about me</a>
+                    <a href="/about.html" class="nav-link" target="_blank">about me</a>
                     <a href="#contact" class="nav-link">contact</a>
                     <a 
                         href="#"
-                        @click="openOutlookEmail"
+                        @click="openOutlookEmail" 
                         @contextmenu="showEmailOptions"
                         class="email"
                         title="Clic gauche: Outlook | Clic droit: Options"
