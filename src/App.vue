@@ -1,6 +1,7 @@
 <template>
 
     <Header />
+    <About />
     <Home />
     <Work /> 
     <Contact />
@@ -10,6 +11,7 @@
 
 <script setup>
 import Header from './header.vue'; // Importation du composant Header
+import About from './About.vue'; // Importation du composant About
 import Home from './Home.vue'; // Importation du composant Home
 import Work from './Work.vue'; // Importation du composant Work
 import Contact from './Contact.vue'; // Importation du composant Contact
