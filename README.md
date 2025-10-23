@@ -1,13 +1,28 @@
-# 🎯 PORTFOLIO - Maxime Cuche
+# 🚀 Portfolio de Maxime Cuche
 
-**Carte de visite numérique** - Développeur Web & Mobile
+**Développeur Web et Mobile Indépendant**
 
-## 📋 Description
-Portfolio personnel développé avec Vue.js 3 et Vite, présentant mes compétences en développement web et mobile.
+[![Deploy to GitHub Pages](https://github.com/Badkush/PORTFOLIO/actions/workflows/deploy.yml/badge.svg)](https://github.com/Badkush/PORTFOLIO/actions/workflows/deploy.yml)
 
-## 🚀 Technologies utilisées
-- **Vue.js 3** - Framework JavaScript progressif
-- **Vite** - Outil de build rapide
+## 🌐 Site en ligne
+
+🔗 **[Voir le portfolio](https://badkush.github.io/PORTFOLIO/)**
+
+## �️ Technologies utilisées
+
+- **Frontend**: Vue.js 3, JavaScript ES6+, HTML5, CSS3
+- **Build**: Vite
+- **Déploiement**: GitHub Pages avec Actions CI/CD
+- **Design**: Responsive, Animations CSS, Glassmorphism
+
+## ✨ Fonctionnalités
+
+- ✅ Design moderne et responsive
+- ✅ Animations fluides et interactives
+- ✅ Modal "About Me" avec présentation complète
+- ✅ Système de contact email intégré
+- ✅ Performance optimisée
+- ✅ Déploiement automatique
 - **CSS3** - Styling avancé avec glassmorphism
 - **JavaScript ES6+** - Logique moderne
 
