@@ -1,17 +1,13 @@
 <template>
-
     <Header />
-    <About />
     <Home />
     <Work /> 
     <Contact />
     <Footer />
-    
 </template>
 
 <script setup>
 import Header from './header.vue'; // Importation du composant Header
-import About from './About.vue'; // Importation du composant About
 import Home from './Home.vue'; // Importation du composant Home
 import Work from './Work.vue'; // Importation du composant Work
 import Contact from './Contact.vue'; // Importation du composant Contact
@@ -22,22 +18,6 @@ import Footer from './Footer.vue'; // Importation du composant Footer
 /* Importation de la police Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Styles globaux pour l'application */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  padding-top: 120px; /* Espace pour le header fixe */
-  padding-bottom: 220px; /* Espace augmenté pour le footer fixe */
-}
-
-/* Reset global pour éviter les conflits */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 </style>
 
 
