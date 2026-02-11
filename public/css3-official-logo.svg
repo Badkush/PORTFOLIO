@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="100" height="133">
+  <!-- CSS3 Shield Background -->
+  <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0z" fill="#1572B6"/>
+  
+  <!-- CSS3 Inner Shield -->
+  <path d="M318.4 159.9H124.4l6.4 71.8h181.2l-19.3 218L192 479.4l-100.7-29.7-19.3-218h47.4l9.8 109.2L192 366.2l62.8-25.3 8.2-92.4H124.4l-6.4-71.8h200.8l-0.4 47.7z" fill="#33A9DC"/>
+  
+  <!-- CSS3 Details -->
+  <path d="M192 208.4H138l6.9 77.9H192l-47.4 15.2v.1l-47.4-15.2-3.2-36.3h23.2l1.6 17.8 25.8 7 25.8-7 2.7-30.3H95.8l-5.5-62.5H192z" fill="#EBEBEB"/>
+  
+  <!-- CSS3 "3" Symbol -->
+  <text x="192" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="80" font-weight="bold">3</text>
+</svg>
