@@ -209,7 +209,7 @@ const copyEmailToClipboard = async (email) => {
 
 <style scoped>
 header {
-  background-color: #FFFEEF;
+  background-color: rgba(255, 254, 239, 0.95); /* Background plus opaque */
   color: #F20E0E;
   font-size: 20px;
   font-weight: bold;
@@ -219,7 +219,6 @@ header {
   right: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(242, 14, 14, 0.1);
-  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
@@ -227,7 +226,6 @@ header {
 header.scrolled {
   background-color: rgba(255, 254, 239, 0.95);
   box-shadow: 0 4px 20px rgba(242, 14, 14, 0.2);
-  backdrop-filter: blur(15px);
 }
 
 header.scrolled .navigation {
@@ -274,16 +272,16 @@ header.scrolled .navigation {
   border: 3px solid #F20E0E;
   transition: all 0.3s ease;
   cursor: pointer;
-  /* Ombre plus prononcée avec plusieurs couches */
+  /* Correction de la syntaxe box-shadow */
   box-shadow: 
-    0 8px 16px #F20E0E(242, 14, 14, 0.4),
-    0 4px 8px #F20E0E(242, 14, 14, 0.3),
+    0 8px 16px rgba(242, 14, 14, 0.4),
+    0 4px 8px rgba(242, 14, 14, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image:hover {
   transform: scale(1.1);
-  /* Ombre plus intense au survol */
+  /* Correction de la syntaxe box-shadow pour le hover */
   box-shadow: 
     0 12px 24px rgba(242, 14, 14, 0.5), /* Ombre encore plus large */
     0 8px 16px rgba(242, 14, 14, 0.4),  /* Ombre moyenne */
@@ -340,7 +338,6 @@ a {
 .email:hover {
     background: rgba(242, 14, 14, 0.1);
     transform: translateY(-2px);
-    text-decoration: none;
 }
 
 .email::before {
@@ -369,6 +366,7 @@ a {
 .email:hover::after {
     opacity: 1;
 }
+
 .nav-link {
   text-transform: uppercase;
   font-weight: bold;
@@ -379,7 +377,6 @@ a {
   cursor: default;
   overflow: hidden;
 }
-
 .nav-link::after {
   content: '';
   position: absolute;
@@ -396,56 +393,7 @@ a {
 .nav-link:hover::after {
   transform: scaleX(1);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navigation {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-  
-  .profile-section {
-    position: static;
-    transform: none;
-    order: -1; /* Met l'image en premier sur mobile */
-  }
-  
-  .profile-image {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .logo-section,
-  .nav-section {
-    flex: none;
-  }
-  
-  .links {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .profile-image {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .name {
-    font-size: 1em;
-  }
-  
-  .links {
-    gap: 15px;
-  }
-}
 </style>
+
 
 
