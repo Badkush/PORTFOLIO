@@ -209,7 +209,7 @@ const copyEmailToClipboard = async (email) => {
 
 <style scoped>
 header {
-  background-color: rgba(255, 254, 239, 0.95); /* Background plus opaque */
+  background-color: rgba(255, 254, 239, 0.95);
   color: #F20E0E;
   font-size: 20px;
   font-weight: bold;
@@ -231,6 +231,7 @@ header.scrolled {
 header.scrolled .navigation {
   padding: 10px 20px;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -256,7 +257,7 @@ header.scrolled .navigation {
   position: absolute;   
   left: 50%;  
   transform: translateX(-50%);
-  z-index: 10; /* Assure que l'image est au-dessus des autres sections */
+  z-index: 10;
 }
 
 .profile-image-container {
@@ -272,7 +273,6 @@ header.scrolled .navigation {
   border: 3px solid #F20E0E;
   transition: all 0.3s ease;
   cursor: pointer;
-  /* Correction de la syntaxe box-shadow */
   box-shadow: 
     0 8px 16px rgba(242, 14, 14, 0.4),
     0 4px 8px rgba(242, 14, 14, 0.3),
@@ -281,11 +281,10 @@ header.scrolled .navigation {
 
 .profile-image:hover {
   transform: scale(1.1);
-  /* Correction de la syntaxe box-shadow pour le hover */
   box-shadow: 
-    0 12px 24px rgba(242, 14, 14, 0.5), /* Ombre encore plus large */
-    0 8px 16px rgba(242, 14, 14, 0.4),  /* Ombre moyenne */
-    0 4px 8px rgba(0, 0, 0, 0.3);       /* Ombre de base renforcée */
+    0 12px 24px rgba(242, 14, 14, 0.5),
+    0 8px 16px rgba(242, 14, 14, 0.4),
+    0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Section droite */
@@ -294,77 +293,84 @@ header.scrolled .navigation {
   display: flex;
   justify-content: flex-end;
 }
+
 .navsection {
   width: 100%; 
 }
+
 .logo {
   text-decoration: none;
   color: #F20E0E;
   letter-spacing: -0.10px;
   font-size: 1.2em;
 }
+
 .name {
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
 }
+
 .metier {
   text-transform: capitalize;
   font-weight: normal;
   margin: 0;
 }
+
 a {
   color: #F20E0E;
   text-decoration: none;
 }
+
 .links {
   display: flex;  
   align-items: center;
   gap: 20px;
 }
+
 .email {
-    font-weight: bold;
-    text-decoration: solid underline;
-    color: #F20E0E;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 8px 12px;
-    border-radius: 6px;
-    background: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #F20E0E;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: transparent;
 }
 
 .email:hover {
-    background: rgba(242, 14, 14, 0.1);
-    transform: translateY(-2px);
+  background: rgba(242, 14, 14, 0.1);
+  transform: translateY(-2px);
 }
 
 .email::before {
-    content: '📧';
-    margin-right: 8px;
-    font-size: 16px;
+  content: '📧';
+  margin-right: 8px;
+  font-size: 16px;
 }
 
 .email::after {
-    content: 'Outlook';
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    background: #333;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 3px;
-    white-space: nowrap;
-    pointer-events: none;
+  content: 'Outlook';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: #333;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .email:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .nav-link {
@@ -374,9 +380,10 @@ a {
   position: relative;
   padding: 0;
   margin: 0;
-  cursor: default;
+  cursor: pointer;
   overflow: hidden;
 }
+
 .nav-link::after {
   content: '';
   position: absolute;
