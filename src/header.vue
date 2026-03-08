@@ -305,7 +305,6 @@ header.scrolled .navigation {
   color: #F20E0E;
   letter-spacing: -0.10px;
   font-size: 1.2em;
-  /* Correction: police avec espaces entre guillemets */
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -314,7 +313,6 @@ header.scrolled .navigation {
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
-  /* Correction: police avec espaces entre guillemets */
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -322,7 +320,6 @@ header.scrolled .navigation {
   text-transform: capitalize;
   font-weight: normal;
   margin: 0;
-  /* Correction: police avec espaces entre guillemets */
   font-family: "Roboto", Arial, sans-serif;
 }
 
