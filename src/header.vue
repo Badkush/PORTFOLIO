@@ -220,12 +220,14 @@ header {
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(242, 14, 14, 0.1);
   transition: all 0.3s ease;
+  /* Suppression des propriétés backdrop-filter non W3C */
 }
 
 /* Effet au scroll */
 header.scrolled {
-  background-color: rgba(255, 254, 239, 0.95);
+  background-color: rgba(255, 254, 239, 0.98); /* Background plus opaque pour compenser */
   box-shadow: 0 4px 20px rgba(242, 14, 14, 0.2);
+  /* Suppression complète de backdrop-filter pour conformité W3C */
 }
 
 header.scrolled .navigation {
@@ -303,6 +305,8 @@ header.scrolled .navigation {
   color: #F20E0E;
   letter-spacing: -0.10px;
   font-size: 1.2em;
+  /* Correction: police avec espaces entre guillemets */
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .name {
@@ -310,12 +314,16 @@ header.scrolled .navigation {
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
+  /* Correction: police avec espaces entre guillemets */
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .metier {
   text-transform: capitalize;
   font-weight: normal;
   margin: 0;
+  /* Correction: police avec espaces entre guillemets */
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 a {
